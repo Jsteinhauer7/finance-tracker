@@ -1,16 +1,61 @@
-# React + Vite
+# Finance Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal finance dashboard built with React and Vite. Connects to the [Finance Tracker API](https://github.com/Jsteinhauer7/finance-tracker-api) to track income and expenses.
 
-Currently, two official plugins are available:
+**Live Demo:** https://finance-tracker-sigma-three.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Animated bento grid dashboard — all data on one page, no tabs
+- Financial health score displayed as a circular gauge SVG
+- Income consumption bar showing what percentage of income is spent
+- Spending breakdown pie chart by category (Recharts)
+- Animated number counters on load
+- Add and delete transactions inline
+- Glassmorphism cards with animated gradient background
+- Fully responsive
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 18 + Vite
+- Recharts for data visualization
+- CSS glassmorphism (backdrop-filter blur)
+- Deployed on Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run the dev server
+
+```bash
+npx vite
+```
+
+### 3. Open in browser
+
+```
+http://localhost:5173
+```
+
+## Project Structure
+
+```
+frontend/
+├── src/
+│   ├── App.jsx      # Main component — all UI and API logic
+│   └── App.css      # Glassmorphism styles, bento grid, animations
+├── index.html
+└── vite.config.js
+```
+
+## Backend
+
+The API is built with FastAPI and deployed on Render.
+
+- Repo: https://github.com/Jsteinhauer7/finance-tracker-api
+- Live API: https://finance-tracker-api-qsu8.onrender.com
