@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
 import './App.css'
 
-const API = 'http://localhost:8000'
+const API = 'https://finance-tracker-api-qsu8.onrender.com'
 const COLORS = ['#f5c842','#e87040','#6ee7a0','#60a5fa','#c084fc','#f472b6','#34d399','#fb923c']
 
 // Animated counter hook
